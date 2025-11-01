@@ -1,0 +1,255 @@
+/* ========================================
+   ESTILOS GLOBALES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #8598ec 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* ========================================
+   INPUTS Y FORMULARIOS
+   ======================================== */
+.input-field {
+    border: 2px solid #e5e7eb;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* ========================================
+   BOTONES
+   ======================================== */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* ========================================
+   TABS
+   ======================================== */
+.tab-btn {
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+    background: white;
+    color: #667eea !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ========================================
+   TARJETAS
+   ======================================== */
+.card-shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   TARJETAS DE UBICACIÓN
+   ======================================== */
+.location-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.location-card.selected {
+    border-color: #667eea;
+    box-shadow: 0 10px 30px rgba(231, 233, 243, 0.3);
+}
+
+/* ========================================
+   TABLAS
+   ======================================== */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table thead tr {
+    border-radius: 0.5rem;
+}
+
+table tbody tr {
+    transition: all 0.2s ease;
+}
+
+table tbody tr:hover {
+    background-color: #f9fafb !important;
+    transform: scale(1.01);
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* ========================================
+   BADGES Y ESTADOS
+   ======================================== */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* ========================================
+   UTILIDADES
+   ======================================== */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   SCROLLBAR PERSONALIZADO
+   ======================================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*es la barra que sube y baja lapantalla */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #653a8c 100%);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .tab-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .location-card {
+        padding: 1rem !important;
+    }
+
+    table {
+        font-size: 0.875rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem !important;
+    }
+}
+
+/* ========================================
+   encabezado de pagina index ANIMADOS
+   ======================================== */
+.bg-gradient-to-r {
+    background: linear-gradient(90deg, #adb1c2 0%, #2e1e3f 100%);
+    animation: slideIn 0.6s alternate-reverse;
+    animation: fadeIn 0.6s ease-in-out;
+
+
+}
+
+/* se animan los iconos de los botones  insumo herramientas y historial*/
+.fas {
+    animation: fadeIn 1s ease-in-out;
+
+
+}
+
+button .fas:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+
+/*
+<aside> -- barra lateral izquierda fija  otro estilo--
+*/
+/*aside {
+    color: #ffffff;
+    width: 250px;
+    padding-left: 30px;
+    height: 65vh;
+    box-shadow: 0 4px 20px 0 black;
+    background-image: linear-gradient(30deg, rgb(199, 131, 212), rgb(151, 14, 185));
+    position: fixed;
+    left: 0;
+    top: 15%;
+}*/
