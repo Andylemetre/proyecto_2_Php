@@ -1,7 +1,7 @@
 <?php
 /**
  * Script para verificar que todos los archivos estén en su lugar
- * Ejecuta este archivo desde el navegador: http://localhost/proyecto_2_Php/verificar_estructura.php
+ * y mostrar instrucciones si falta alguno.
  */
 
 $archivosRequeridos = [
