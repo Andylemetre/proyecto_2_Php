@@ -221,7 +221,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['admin_id'])) {
         </div>
 
         <div class="mt-4 text-center">
-            <a href="login.php" 
+            <a href="login.php/../" 
                 class="inline-block bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition">
                 <i class="fas fa-sign-in-alt mr-2"></i>ir a iniciar sesión
             </a>
