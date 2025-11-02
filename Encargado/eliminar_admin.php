@@ -4,7 +4,7 @@
  * IMPORTANTE: Elimina este archivo después de usarlo por seguridad
  */
 
-require_once __DIR__ . '/config/db.php';
+require_once __DIR__ . '/../config/db.php';
 
 // Configuración de seguridad: cambiar a false después de eliminar el admin
 define('ALLOW_ADMIN_DELETION', true);
