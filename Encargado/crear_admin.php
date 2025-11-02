@@ -164,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <?php else: ?>
         <div class="text-center space-y-4">
-            <a href="/../proyecto_2_p.php/login.php" 
+            <a href="/../login.php" 
                 class="block w-full bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition">
                 <i class="fas fa-sign-in-alt mr-2"></i>Ir al Login
             </a>
