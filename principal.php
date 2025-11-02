@@ -345,7 +345,7 @@ if (Auth::check()) {
                         <span class="text-2xl font-bold">GestiónCocina</span>
                     </div>
                     <p class="text-gray-400">
-                        Sistema completo de gestión de inventario para cocinas escolares.
+                        Sistema completo de gestión de inventario para la ocina.
                     </p>
                 </div>
                 <div>
@@ -356,14 +356,7 @@ if (Auth::check()) {
                         <li><a href="login.php" class="text-gray-400 hover:text-white transition">Iniciar Sesión</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-xl font-bold mb-4">Contacto</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><i class="fas fa-envelope mr-2"></i>info@gestioncocina.cl</li>
-                        <li><i class="fas fa-phone mr-2"></i>+56 9 1234 5678</li>
-                        <li><i class="fas fa-map-marker-alt mr-2"></i>Santiago, Chile</li>
-                    </ul>
-                </div>
+                
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; <?php echo date('Y'); ?> GestiónCocina. Todos los derechos reservados.</p>
