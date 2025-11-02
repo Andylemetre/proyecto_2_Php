@@ -129,8 +129,8 @@ if (Auth::check()) {
                     <span class="text-white text-2xl font-bold">GestiónCocina</span>
                 </div>
                 <div class="hidden md:flex gap-4 items-center">
-                    <a href="#caracteristicas" class="text-white hover:text-indigo-200 transition px-4 py-2">Características</a>
-                    <a href="#beneficios" class="text-white hover:text-indigo-200 transition px-4 py-2">Beneficios</a>
+                    <a href="#caracteristicas" class="text-blue hover:text-indigo-400 transition px-4 py-2">Características</a>
+                    <a href="#beneficios" class="text-blue hover:text-indigo-400 transition px-4 py-2">Beneficios</a>
                     <a href="login.php" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition">
                         <i class="fas fa-sign-in-alt mr-2"></i>Iniciar Sesión
                     </a>

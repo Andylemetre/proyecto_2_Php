@@ -9,6 +9,7 @@ $archivosRequeridos = [
     'index.php',
     'login.php',
     'registro.php',
+    'admin_usuarios.php',
     
     // Carpeta config
     'config/db.php',
@@ -25,6 +26,8 @@ $archivosRequeridos = [
     // Carpeta assets
     'assets/css/styles.css',
     'assets/js/app.js',
+    'Encargado/crear_admin.php',
+    'Encargado/eliminar_admin.php',
 ];
 
 $carpetasRequeridas = [
