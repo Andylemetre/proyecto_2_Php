@@ -58,6 +58,14 @@ $isAdmin = Auth::isAdmin();
                 <button onclick="logout()" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition">
                     <i class="fas fa-sign-out-alt mr-2"></i>Cerrar Sesión
                 </button>
+                <?php if ($isAdmin): ?>
+                 <a href="admin_usuarios.php" 
+                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg font-semibold transition">
+                        <i class="fas fa-home mr-2"></i> Administrar Usuarios
+                    </a>
+                    <?php endif; ?>
+                                
+                                
             </div>
         </div>
     </header>

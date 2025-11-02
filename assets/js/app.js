@@ -1,70 +1,4 @@
-/*
-   
-    loadTools();
-   
-    loadMovements();
-   
-    setupForms();
-});
 
-
-function switchTab(tabName) {
-    
-    document.querySelectorAll('.tab-content').forEach(tab => {
-        tab.classList.add('hidden');
-    });
-
-   
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
-
-   
-    document.getElementById(`tab-${tabName}`).classList.remove('hidden');
-
-   
-    event.target.classList.add('active');
-
-    
-    if (tabName === 'insumos') {
-        loadInventory(); 
-    } else if (tabName === 'herramientas') {
-        loadTools(); // Recarga las herramientas
-    } else if (tabName === 'historial') {
-        loadMovements(); // Recarga el historial de movimientos
-    }
-}
-
-// Función para configurar los eventos de todos los formularios
-function setupForms() {
-   
-    const inventoryForm = document.getElementById('inventory-form');
-    if (inventoryForm) {
-        
-        inventoryForm.addEventListener('submit', handleAddItem);
-    }
-
-    
-    const movementForm = document.getElementById('movement-form');
-    if (movementForm) {
-        // Agrega el manejador de eventos para el envío del formulario de movimientos
-        movementForm.addEventListener('submit', handleMovement);
-    }
-
-    // Obtiene referencia al formulario de herramientas (solo para administradores)
-    const toolsForm = document.getElementById('tools-form');
-    if (toolsForm) {
-        // Agrega el manejador de eventos para el envío del formulario de herramientas
-        toolsForm.addEventListener('submit', handleAddTool);
-    }
-
-    // Obtiene referencia al formulario de movimientos de herramientas
-    const toolMovementForm = document.getElementById('tool-movement-form');
-    if (toolMovementForm) {
-        // Agrega el manejador de eventos para el envío del formulario de movimientos de herramientas
-        toolMovementForm.addEventListener('submit', handleToolMovement);
-    }
-}*/
 
 // Variables globales
 let currentLocationFilter = 'todas';
@@ -390,7 +324,6 @@ function filterByLocation(ubicacion) {
     if (filterText) {
         filterText.textContent = ubicacion !== 'todas' ? `- Ubicación: ${ubicacion}` : '';
     }
-
     // Cargar herramientas filtradas
     loadTools(ubicacion);
 }

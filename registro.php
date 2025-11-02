@@ -147,10 +147,10 @@ if (Auth::check()) {
             }
         }
 
-        function showMessage(message, type = 'error') {
+        function showMessage(message, type = 'error') {//validar el tipo de mensaje
             const bgColor = type === 'success' ? 'bg-green-50 border-green-200 text-green-700' : 'bg-red-50 border-red-200 text-red-700';
             const icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
-            
+            // Mostrar el mensaje en el contenedor
             messageContainer.innerHTML = `
                 <div class="shake ${bgColor} border px-4 py-3 rounded-lg mb-4">
                     <i class="fas ${icon} mr-2"></i>${message}
@@ -158,7 +158,7 @@ if (Auth::check()) {
             `;
         }
 
-        function setLoading(isLoading) {
+        function setLoading(isLoading) {//función para el estado de carga
             registroBtn.disabled = isLoading;
             if (isLoading) {
                 registroBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Registrando...';
@@ -168,7 +168,7 @@ if (Auth::check()) {
         }
 
         // Validación de fortaleza de contraseña
-        passwordInput.addEventListener('input', function() {
+        passwordInput.addEventListener('input', function() {//
             const password = this.value;
             const strengthBar = document.getElementById('password-strength');
             const strengthText = document.getElementById('password-strength-text');
@@ -207,7 +207,7 @@ if (Auth::check()) {
         });
 
         // Validación de coincidencia de contraseñas
-        confirmPasswordInput.addEventListener('input', function() {
+        confirmPasswordInput.addEventListener('input', function() {//
             if (this.value && this.value !== passwordInput.value) {
                 this.setCustomValidity('Las contraseñas no coinciden');
             } else {

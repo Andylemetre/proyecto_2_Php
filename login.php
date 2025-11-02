@@ -115,6 +115,7 @@ $expired = isset($_GET['expired']) && $_GET['expired'] == '1';
             const passwordInput = document.getElementById('login-password');
             const passwordIcon = document.getElementById('password-icon');
             
+            
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
                 passwordIcon.classList.remove('fa-eye');

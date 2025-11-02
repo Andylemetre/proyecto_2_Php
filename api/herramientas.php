@@ -25,6 +25,7 @@ try {
             
             // Si se especifica una ubicación y no es 'todas', filtra por ubicación
             if ($ubicacion && $ubicacion !== 'todas') {
+                // Prepara la consulta para obtener herramientas por ubicación
                 $stmt = $pdo->prepare("SELECT * FROM herramientas WHERE ubicacion = :ubicacion ORDER BY nombre");
                 $stmt->execute(['ubicacion' => $ubicacion]);
             } else {
@@ -46,6 +47,7 @@ try {
             $data = json_decode(file_get_contents('php://input'), true);
             
             // Prepara la consulta para insertar una nueva herramienta
+            // p
             $stmt = $pdo->prepare("
                 INSERT INTO herramientas (nombre, cantidad, categoria, ubicacion, usuario_creacion) 
                 VALUES (:nombre, :cantidad, :categoria, :ubicacion, :usuario_creacion)

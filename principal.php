@@ -359,7 +359,7 @@ if (Auth::check()) {
                 
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; <?php echo date('Y'); ?> GestiónCocina. Todos los derechos reservados.</p>
+                <p>&copy; <?php echo date('Y'); ?> GestiónCocina.</p>
             </div>
         </div>
     </footer>

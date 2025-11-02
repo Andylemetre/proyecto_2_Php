@@ -4,7 +4,7 @@
  * IMPORTANTE: Elimina este archivo después de usarlo por seguridad
  */
 
-require_once __DIR__ . '/config/db.php';
+require_once __DIR__ .'/config/db.php';
 
 // Configuración de seguridad: cambiar a false después de crear el admin
 define('ALLOW_ADMIN_CREATION', true);
@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $mensaje .= 'Usuario: ' . htmlspecialchars($nombreUsuario) . '<br>';
                 $mensaje .= 'Email: ' . htmlspecialchars($email) . '<br>';
                 $mensaje .= 'Contraseña: (la que ingresaste)<br><br>';
-                $mensaje .= '⚠️ <strong>IMPORTANTE:</strong> Elimina este archivo (crear_admin.php) ahora por seguridad.';
+                $mensaje .= '⚠️ <strong>IMPORTANTE:</strong> no olvides tu contraseña.';
                 $tipo = 'success';
             }
             
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <i class="fas fa-shield-alt text-white text-3xl"></i>
             </div>
             <h1 class="text-3xl font-bold text-gray-800 mb-2">Crear Administrador</h1>
-            <p class="text-red-600 text-sm font-semibold">⚠️ Solo para uso inicial - Eliminar después</p>
+            <p class="text-red-600 text-sm font-semibold">⚠️ Solo para uso gerencial del colegio</p>
         </div>
 
         <?php if ($mensaje): ?>
@@ -156,7 +156,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <i class="fas fa-exclamation-triangle mr-2"></i>
                 <strong>Advertencia de Seguridad:</strong><br>
                 Este archivo permite crear administradores sin autenticación. 
-                <strong>Debe ser eliminado inmediatamente después de usarlo.</strong>
+                <strong>Necesitas eliminar un admin ?:</strong><br>
+                Este archivo permite eliminar sin autenticación. 
+                <strong> has Click aqui: </strong>
+                <a href="eliminar_admin.php" class="text-yellow-800 underline">Eliminar Admin</a> 
             </p>
         </div>
         <?php else: ?>
@@ -165,9 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 class="block w-full bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition">
                 <i class="fas fa-sign-in-alt mr-2"></i>Ir al Login
             </a>
-            <p class="text-sm text-red-600 font-semibold">
-                🗑️ No olvides eliminar este archivo: crear_admin.php
-            </p>
+            
         </div>
         <?php endif; ?>
     </div>
