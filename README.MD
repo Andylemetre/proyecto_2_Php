@@ -2,6 +2,13 @@
 
 
 
+![pagina principal](./assets/PANTALLA_PRINCIPAL.png)
+
+Una solución completa y moderna para la gestión de inventario en cocinas escolares
+
+
+---
+
 📋 Descripción
 
 El Sistema de Gestión de Inventario para Cocina Escolar es una aplicación web completa diseñada para optimizar y controlar el inventario de insumos y herramientas en cocinas de instituciones educativas. Con una interfaz moderna e intuitiva, permite el registro detallado de movimientos, gestión de usuarios y seguimiento en tiempo real del estado del inventario.
