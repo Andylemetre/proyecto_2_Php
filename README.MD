@@ -4,6 +4,7 @@
 
 ![pagina principal](./assets/PANTALLA_PRINCIPAL.png)
 
+
 Una solución completa y moderna para la gestión de inventario en cocinas escolares
 
 
@@ -95,45 +96,7 @@ Accede a `verificar_estructura.php` en tu navegador para confirmar que todos los
 
 Navega a `principal.php` para ver la página de inicio, o directamente a `login.php` para iniciar sesión.
 
----
-
-📁 Estructura del Proyecto
-
-
-gestion-cocina/
-│
-├── 📄 principal.php          # Página principal del sistema
-├── 📄 index.php              # Dashboard principal (requiere autenticación)
-├── 📄 login.php              # Página de inicio de sesión
-├── 📄 registro.php           # Página de registro de usuarios
-├── 📄 admin_usuarios.php     # Panel de administración de usuarios
-├── 📄 verificar_estructura.php
-│
-├── 📁 config/
-│   ├── db.php               # Configuración de base de datos
-│   └── Auth.php             # Clase de autenticación
-│
-├── 📁 api/
-│   ├── login.php            # API de inicio de sesión
-│   ├── registro.php         # API de registro
-│   ├── logout.php           # API de cierre de sesión
-│   ├── insumos.php          # API de gestión de insumos
-│   ├── herramientas.php     # API de gestión de herramientas
-│   └── movimientos.php      # API de movimientos
-│
-├── 📁 assets/
-│   ├── css/
-│   │   └── styles.css       # Estilos personalizados
-│   └── js/
-│       └── app.js           # JavaScript principal
-│
-├── 📁 Encargado/
-│   ├── crear_admin.php      # Utilidad para crear administradores
-│   └── eliminar_admin.php   # Utilidad para eliminar administradores
-│
-└── 📄 schema_con_usuarios.sql  # Esquema de base de datos
-
-
+![estructura](./assets/estructura.png)
 
 
 💻 Uso
