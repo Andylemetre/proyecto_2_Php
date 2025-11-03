@@ -1,24 +1,6 @@
  🍴 Sistema de Gestión de Inventario - Cocina Escolar
 
-<div align="center">
 
-![Banner del Proyecto](./assets/PANTALLA_PRINCIPAL.png)
-
-Una solución completa y moderna para la gestión de inventario en cocinas escolares
-
-[![PANTALLA DE INSUMO]](./assets/PANTALLA_INSUMO.png)
-[PANTALLA DE HERRAMIENTA](./assets/PANTALLA_HERRAMIENTA.png)
-[![HISTORIAL DE MOVIMIENTOS]](./assets/PANTALLA_HISTORIALMOV.png)
-
-[Características](#-características-principales) •
-[Instalación](#-instalación) •
-[Uso](#-uso) •
-[Tecnologías](#-tecnologías-utilizadas) •
-[Contribuir](#-contribuir)
-
-</div>
-
----
 
 📋 Descripción
 
@@ -45,22 +27,22 @@ Proporcionar una herramienta eficiente que reduzca pérdidas, optimice recursos 
 - Sistema de filtros por ubicación
 
 📊 Sistema de Historial
-- **Registro completo** de todas las transacciones
-- **Trazabilidad** con información del usuario responsable
-- **Filtros avanzados** por tipo (insumos/herramientas)
-- **Información detallada** de cada movimiento
+- Registro completo de todas las transacciones
+- Trazabilidad** con información del usuario responsable
+- Filtros avanzados por tipo (insumos/herramientas)
+- Información detallada de cada movimiento
 
 👥 Gestión de Usuarios
-- **Dos roles definidos**: Administrador y Usuario
-- **Autenticación segura** con contraseñas encriptadas
-- **Panel de administración** para gestión de cuentas
-- **Control de acceso** basado en permisos
+- Dos roles definidos: Administrador y Usuario
+- Autenticación segura con contraseñas encriptadas
+- Panel de administración para gestión de cuentas
+- Control de acceso basado en permisos
 
 🎨 Interfaz Moderna
-- **Diseño responsive** adaptable a todos los dispositivos
-- **Navegación intuitiva** por pestañas
-- **Visualización clara** con código de colores
-- **Experiencia de usuario optimizada**
+- Diseño responsive adaptable a todos los dispositivos
+- Navegación intuitiva por pestañas
+- Visualización clara con código de colores
+- Experiencia de usuario optimizada
 
 ---
 
