@@ -425,37 +425,41 @@ async function handleMovement(e) {
 }
 // Función para manejar el envío del formulario de movimientos de herramientas
 async function handleToolMovement(e) {
-    e.preventDefault();
+    e.preventDefault(); // Previene el comportamiento por defecto del formulario
 
+    // Recopila los datos del formulario de movimiento de herramienta
     const data = {
-        elemento: document.getElementById('tool-movement-item').value,
-        tipo_movimiento: document.getElementById('tool-movement-type').value,
-        categoria: 'herramienta',
-        cantidad: parseInt(document.getElementById('tool-movement-quantity').value),
-        unidad: 'unid',
-        motivo: document.getElementById('tool-movement-reason').value
+        elemento: document.getElementById('tool-movement-item').value, // Nombre de la herramienta seleccionada
+        tipo_movimiento: document.getElementById('tool-movement-type').value, // Tipo de movimiento (entrada/salida)
+        categoria: 'herramienta', // Categoría fija: herramienta
+        cantidad: parseInt(document.getElementById('tool-movement-quantity').value), // Cantidad a mover
+        unidad: 'unid', // Unidad fija para herramientas
+        motivo: document.getElementById('tool-movement-reason').value // Motivo del movimiento
     };
 
     try {
+        // Envía los datos a la API para registrar el movimiento
         const response = await fetch('api/movimientos.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
         });
 
+        // Parsea la respuesta JSON de la API
         const result = await response.json();
 
+        // Si el movimiento se registró correctamente
         if (result.success) {
-            showNotification('Movimiento registrado exitosamente', 'success');
-            e.target.reset();
-            loadTools(currentLocationFilter);
-            loadMovements();
+            showNotification('Movimiento registrado exitosamente', 'success'); // Muestra notificación de éxito
+            e.target.reset(); // Limpia el formulario
+            loadTools(currentLocationFilter); // Recarga la lista de herramientas
+            loadMovements(); // Recarga el historial de movimientos
         } else {
-            showNotification(result.message, 'error');
+            showNotification(result.message, 'error'); // Muestra mensaje de error si la operación falla
         }
     } catch (error) {
-        console.error('Error:', error);
-        showNotification('Error al registrar el movimiento', 'error');
+        console.error('Error:', error); // Muestra el error en consola
+        showNotification('Error al registrar el movimiento', 'error'); // Notifica el error al usuario
     }
 }
 // Función para cargar y mostrar el historial de movimientos
