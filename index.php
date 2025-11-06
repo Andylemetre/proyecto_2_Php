@@ -55,7 +55,7 @@ $isAdmin = Auth::isAdmin();
                         <i class="fas fa-<?php echo $isAdmin ? 'shield-alt' : 'user'; ?> mr-1"></i>
                         <?php echo $isAdmin ? 'Administrador' : 'Usuario'; ?>
                     </p>
-                </div>
+                </div> 
                 <!-- Botón para cerrar sesión -->
                 <button onclick="logout()" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition">
                     <i class="fas fa-sign-out-alt mr-2"></i>Cerrar Sesión

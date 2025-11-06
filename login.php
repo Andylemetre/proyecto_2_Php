@@ -5,11 +5,12 @@ require_once __DIR__ . '/config/Auth.php';
 // Si el usuario ya está autenticado, lo redirige al inicio
 if (Auth::check()) {
     header('Location: index.php');
-    exit;
+    exit;// si no esta autenticado, muestra el formulario de login
 }
 
 // Verifica si la sesión expiró por inactividad
 $expired = isset($_GET['expired']) && $_GET['expired'] == '1';
+// Muestra el formulario de login
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -102,6 +103,11 @@ $expired = isset($_GET['expired']) && $_GET['expired'] == '1';
                 <a href="registro.php" class="text-indigo-600 font-semibold hover:text-indigo-800">Regístrate aquí</a>
             </p>
         </div>
+        
+        <div class="mt-4 text-center">
+            <a href="principal.php" class="text-gray-500 text-sm hover:text-gray-700">
+                <i class="fas fa-arrow-left mr-2"></i>Volver al inicio
+            </a>
     </div>
 
     <script>
