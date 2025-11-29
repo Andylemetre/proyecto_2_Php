@@ -36,8 +36,7 @@ if (Auth::check()) {
         .hero-section {
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: center;;
             position: relative;
             overflow: hidden;
         }
